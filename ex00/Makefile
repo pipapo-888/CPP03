@@ -6,7 +6,7 @@
 #    By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/19 16:16:52 by knomura           #+#    #+#              #
-#    Updated: 2026/07/26 21:19:25 by knomura          ###   ########.fr        #
+#    Updated: 2026/07/26 22:25:54 by knomura          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++
 
-SRCS = main.cpp Fixed.cpp
+SRCS = main.cpp ClapTrap.cpp
 
 OBJS = $(SRCS:%.cpp=%.o)
 
