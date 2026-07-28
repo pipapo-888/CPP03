@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:16:52 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/28 16:08:47 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/28 19:38:49 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ ClapTrap::ClapTrap() : _name("Default"), _hitPoints(10), _energyPoints(10), _att
 	std::cout << "Default constructor called\n";
 }
 
-ClapTrap::ClapTrap(std::string name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+ClapTrap::ClapTrap(const std::string &name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
 {
-	std::cout << "constructor called\n";
+	std::cout << "Constructor called\n";
 }
 
 ClapTrap::ClapTrap(const ClapTrap &obj) : _name(obj._name), _hitPoints(obj._hitPoints), _energyPoints(obj._energyPoints), _attackDamage(obj._attackDamage)
@@ -30,6 +30,8 @@ ClapTrap::ClapTrap(const ClapTrap &obj) : _name(obj._name), _hitPoints(obj._hitP
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &obj)
 {
+	std::cout << "ScavTrap copy assignment operator called\n";
+
 	_name = obj._name;
 	_hitPoints = obj._hitPoints;
 	_energyPoints = obj._energyPoints;
