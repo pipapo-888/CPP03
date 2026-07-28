@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:16:52 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/28 16:02:04 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/28 16:08:47 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void ClapTrap::attack(const std::string &target)
 	if (!canMove())
 		return ;
 	_energyPoints--;
-	std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " point of damage!\n";
+	std::cout << "ClapTrap " << _name << " attacks " << target << ", causing " << _attackDamage << " points of damage!\n";
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
@@ -77,5 +77,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 		return;
 	_energyPoints--;
 	_hitPoints += amount;
-	std::cout << "ClapTrap " << _name << " repairs iteself!\n";
+	std::cout << "ClapTrap " << _name << " repairs itself!\n";
 }
