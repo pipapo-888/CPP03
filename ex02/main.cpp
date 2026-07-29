@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:16:52 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/29 13:36:48 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 13:53:37 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,8 @@ static void testFragTrap()
 	FragTrap fragAssigned;
 	fragAssigned = frag;
 
-	for (int i = 0; i < 100; i++)
-		frag.beRepaired(1);
+	for (int i = 0; i < 11; i++)
+		frag.beRepaired(100);
 	frag.takeDamage(1000);
 	frag.attack("Target");
 	frag.highFivesGuys();

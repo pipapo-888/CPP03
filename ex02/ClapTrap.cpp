@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:16:52 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/28 19:38:49 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 13:58:42 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ bool ClapTrap::canMove() const
 {
 	if (_hitPoints <= 0)
 	{
-		std::cout << "Not enough HP\n";
+		std::cout << "Not Enough HP\n";
 		return false;
 	}
 	if (_energyPoints <= 0)
@@ -79,5 +79,5 @@ void ClapTrap::beRepaired(unsigned int amount)
 		return;
 	_energyPoints--;
 	_hitPoints += amount;
-	std::cout << "ClapTrap " << _name << " repairs itself!\n";
+	std::cout << "ClapTrap " << _name << " repairs itself for " << amount << " hitpoints!\n";
 }
