@@ -6,7 +6,7 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:16:52 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/29 15:27:52 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 15:43:52 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,6 +84,10 @@ static void testNonVirtualDispatch()
 
 	scavAsClap.attack("Target");
 	fragAsClap.attack("Target");
+
+	std::cout << "\n----- scavAsClap shares state with scav (same object, just a reference) -----\n";
+	scav.takeDamage(1000);
+	scavAsClap.attack("Target");
 }
 
 int main()
