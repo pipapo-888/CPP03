@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(const ClapTrap &obj) : _name(obj._name), _hitPoints(obj._hitP
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &obj)
 {
-	std::cout << "ScavTrap copy assignment operator called\n";
+	std::cout << "ClapTrap copy assignment operator called\n";
 
 	_name = obj._name;
 	_hitPoints = obj._hitPoints;

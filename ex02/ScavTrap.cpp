@@ -6,12 +6,11 @@
 /*   By: knomura <knomura@student.42tokyo.jp>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/28 16:20:35 by knomura           #+#    #+#             */
-/*   Updated: 2026/07/28 19:43:51 by knomura          ###   ########.fr       */
+/*   Updated: 2026/07/29 13:07:30 by knomura          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <string>
 #include "ScavTrap.hpp"
 
 ScavTrap::ScavTrap() : ClapTrap()
